@@ -2,7 +2,11 @@
 ----------------------------------------------------------------------------------------------------*/
 
 /* font normalization inspired by  from the YUI Library's fonts.css: developer.yahoo.com/yui/ */
-body { font:13px/1.231 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif; *font-size:small; } /* hack retained to preserve specificity */
+body { 
+	background: white url('../images/gridbg.gif'); /* Typo Grid */
+	font:13px/1.231 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif; 
+	*font-size:small; /* hack retained to preserve specificity */
+} 
 select, input, textarea, button { font:99% sans-serif; }
 
 /* normalize monospace sizing
@@ -37,34 +41,41 @@ hr {
 
 /* `Headings
 ----------------------------------------------------------------------------------------------------*/
-
 h1 {
 	font-size: 25px;
+	line-height: 37px;
 }
 
 h2 {
 	font-size: 23px;
+	line-height: 23px;
 }
 
 h3 {
 	font-size: 21px;
+	line-height: 27px;
 }
 
 h4 {
 	font-size: 19px;
+	line-height: 27px;
 }
 
 h5 {
 	font-size: 17px;
+	line-height: 23px;
 }
 
 h6 {
 	font-size: 15px;
+	line-height: 21px;
 }
 
-/* `Spacing
+/* `Lists
 ----------------------------------------------------------------------------------------------------*/
-
+dd {
+    margin: 0 0 0 20px;
+}
 ol {
 	list-style: decimal;
 }
@@ -73,8 +84,10 @@ ul {
 	list-style: disc;
 }
 
+/* `Spacing
+----------------------------------------------------------------------------------------------------*/
 li {
-	margin-left: 30px;
+	margin-left: 20px;
 }
 
 p,
@@ -92,7 +105,7 @@ pre,
 table,
 address,
 fieldset {
-	margin-bottom: 20px;
+	margin-bottom: 18px;
 }
 /* ==|== primary styles =====================================================
    	Author: Joerg Schoeneburg
@@ -103,6 +116,15 @@ fieldset {
 /* ==|== non-semantic helper classes ========================================
    	Please define your styles before this section.
    ========================================================================== */
+.left { 
+  float: left; 
+  margin: 0 18px 18px 0; 
+}
+
+.right { 
+  float: right; 
+  margin: 0 0 18px 18px; 
+}
 
 /*
  * Chrome Frame Prompt
