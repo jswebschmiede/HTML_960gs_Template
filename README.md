@@ -20,6 +20,7 @@ und durch andere Dinge ergänzt oder neue hinzugefügt.
 #####IE Fix
 - PIE.htc - http://css3pie.com
 - selectivizr v1.0.2 - (c) Keith Clark, freely distributable under the terms of the MIT license. - selectivizr.com
+- ie7-js - https://code.google.com/p/ie7-js/
 
 ----------------------
 
