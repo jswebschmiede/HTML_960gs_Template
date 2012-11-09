@@ -44,11 +44,14 @@ window.log = function f() {
 
 // place any jQuery/helper plugins in here, instead of separate, slower script files.
 
-/* Browser Select Script - modifyed for Modernizer
- *
- * - add the browser name as css class at html element without the js class
- */
-
+/*
+	CSS Browser Selector v0.4.0 (Nov 02, 2010)
+	Rafael Lima (http://rafael.adm.br)
+	http://rafael.adm.br/css_browser_selector
+	License: http://creativecommons.org/licenses/by/2.5/
+	Contributors: http://rafael.adm.br/css_browser_selector#contributors
+	Joerg Schoeneburg - modifyed for Modernizer - add the browser name as css class at html element without the js class
+*/
 function css_browser_selector(u) {
 	var ua = u.toLowerCase(), is = function(t) {
 		return ua.indexOf(t) > -1
