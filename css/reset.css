@@ -267,11 +267,11 @@ table input {
 }
 
 /*
- * Re-set default cursor for disabled elements
+ * set cursor for disabled elements
  */
 button[disabled],
 input[disabled] {
-    cursor: default;
+    cursor: not-allowed;
 }
 
 
