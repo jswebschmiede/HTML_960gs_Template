@@ -19,6 +19,7 @@ und durch andere Dinge ergänzt oder neue hinzugefügt.
 
 #####IE Fix
 - PIE.htc - http://css3pie.com
+- nwmatcher v1.2.5 - http://javascript.nwbox.com/NWMatcher/
 - selectivizr v1.0.2 - (c) Keith Clark, freely distributable under the terms of the MIT license. - selectivizr.com
 - ie7-js - https://code.google.com/p/ie7-js/
 
