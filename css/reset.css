@@ -44,16 +44,16 @@ abbr[title], dfn[title] {
 	border-bottom: 1px dotted;
 	cursor: help;
 }
-h1, h2, h3, h4, h5, h6 {
-	text-rendering: optimizeLegibility;
-}
 
 /*
  * 1. Removes border when inside 'a' element in IE6/7/8/9, F3
  * 2. Improves image quality when scaled in IE7
  *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
  */
-img {
+img {  
+	width: auto\9;
+  	height: auto;
+  	max-width: 100%;
     border: 0; /* 1. */
     vertical-align: middle;
     -ms-interpolation-mode: bicubic; /* 2. */
@@ -182,16 +182,35 @@ textarea {
     overflow: auto; /* 1 */
     vertical-align: top; /* 2 */
 }
+
 input, select {
 	vertical-align: middle;
 }
+
 input, textarea, select {
 	font-family: inherit;
 	font-size: inherit;
 	font-weight: inherit
 }
+
 input, textarea, select {
 	*font-size: 100%
+}
+
+/* 
+ * 1. In IE7, the height of the select element cannot be changed by height, only font-size,
+ * 2. For IE7, add top margin to align select with labels. 
+ */
+select,
+input[type="file"] {
+  height: 30px; 
+  *margin-top: 4px;   /* 1. */ 
+  line-height: 30px;  /* 2. */
+}
+
+select[multiple],
+select[size] {
+  height: auto;
 }
 
 /*
@@ -282,8 +301,10 @@ input[disabled] {
  * Tables still need 'cellspacing="0"' in the markup 
  */
 table {
+	max-width: 100%;
+	background-color: transparent;
 	border-collapse: collapse;
-	border-spacing: 0;
+	border-spacing: 0
 }
 td {
 	vertical-align: top;
